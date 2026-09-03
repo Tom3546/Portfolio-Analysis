@@ -1,5 +1,10 @@
+import SideBar from "./components/ui/SideBar";
 function App() {
-  return <></>;
+  return (
+    <div className="flex">
+      <SideBar />
+    </div>
+  );
 }
 
 export default App;
