@@ -1,5 +1,65 @@
 @import "tailwindcss";
+@import "@fontsource/geist-sans";
+
+/*neutral: 0; coooler: 310*/
+/*text: #DFDFD6*/
 
 @theme {
-  --color-sidebar-primary: #c5c5c5;
+  --color-bg-dark: var(--bg-dark);
+  --color-bg: var(--bg);
+  --color-bg-light: var(--bg-light);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-highlight: var(--highlight);
+  --color-border: var(--border);
+  --color-border-muted: var(--border-muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-info: var(--info);
+}
+
+body {
+  background: var(--bg-dark);
+  font-family: "Geist Sans", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+:root,
+[data-theme="dark"] {
+  --bg-dark: oklch(0.1 0 310);
+  --bg: oklch(0.15 0 310);
+  --bg-light: oklch(0.2 0 310);
+  --text: oklch(0.9 0.012 106.776);
+  --text-muted: oklch(0.7 0 310);
+  --highlight: oklch(0.35 0 310);
+  --border: oklch(0.26 0 310);
+  --border-muted: oklch(0.2 0 310);
+  --primary: oklch(0.76 0.1 340);
+  --primary-hover: oklch(0.8 0.1 340);
+  --secondary: oklch(0.55 0.08 350);
+  --danger: oklch(0.7 0.05 30);
+  --warning: oklch(0.7 0.05 100);
+  --success: oklch(0.7 0.05 160);
+  --info: oklch(0.7 0.05 260);
+}
+
+[data-theme="light"] {
+  --bg-dark: oklch(0.92 0 310);
+  --bg: oklch(0.96 0 310);
+  --bg-light: oklch(1 0 310);
+  --text: oklch(0.15 0 310);
+  --text-muted: oklch(0.4 0 310);
+  --highlight: oklch(1 0 310);
+  --border: oklch(0.88 0 310);
+  --border-muted: oklch(0.93 0 310);
+  --primary: oklch(0.4 0.1 310);
+  --secondary: oklch(0.4 0.1 130);
+  --danger: oklch(0.5 0.05 30);
+  --warning: oklch(0.5 0.05 100);
+  --success: oklch(0.5 0.05 160);
+  --info: oklch(0.5 0.05 260);
 }
