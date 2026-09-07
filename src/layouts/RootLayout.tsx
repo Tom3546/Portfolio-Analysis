@@ -1,6 +1,6 @@
-import SideBar from "./components/ui/SideBar";
-import DashBoard from "./pages/DashBoard";
-function App() {
+import SideBar from "./SideBar";
+import DashBoard from "../pages/DashBoard";
+function RootLayout() {
   return (
     <main className="flex h-screen w-full p-2 gap-4 bg-bg-dark text-text overflow-hidden">
       <SideBar />
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default RootLayout;

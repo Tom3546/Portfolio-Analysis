@@ -1,5 +1,5 @@
-import logoDark from "../../assets/Union.svg";
-import SideBarItem from "./SideBarItem";
+import logoDark from "../assets/Union.svg";
+import SideBarItem from "../components/ui/SideBarItem";
 
 import { ChevronsLeft } from "lucide-react";
 /* import { ChevronsRight } from "lucide-react"; */
