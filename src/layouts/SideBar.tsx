@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoDark from "../assets/Union.svg";
 import SideBarItem from "../components/ui/SideBarItem";
 
@@ -35,9 +36,13 @@ export default function SideBar() {
         </button>
       </div>
 
-      <SideBarItem icon={LayoutDashboard} label="Dashboard" />
+      <Link to="/">
+        <SideBarItem icon={LayoutDashboard} label="Dashboard" />
+      </Link>
       <HorizontalRule />
-      <SideBarItem icon={ChartLine} label="Performance" />
+      <Link to="/performance">
+        <SideBarItem icon={ChartLine} label="Performance" />
+      </Link>
       <SideBarItem icon={ChartPie} label="Holdings" />
       <SideBarItem icon={ArrowLeftRight} label="Transactions" />
       <SideBarItem icon={HandCoins} label="Dividends" />

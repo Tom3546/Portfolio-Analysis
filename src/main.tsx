@@ -11,6 +11,8 @@ import Holdings from "./pages/Holdings";
 import Transactions from "./pages/Transactions";
 import Dividends from "./pages/Dividends";
 
+import NotFoundPage from "./pages/NotFoundPage";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +39,10 @@ const router = createBrowserRouter([
         element: <Dividends />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 
