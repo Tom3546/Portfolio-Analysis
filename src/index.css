@@ -25,7 +25,7 @@
 body {
   background: var(--bg-dark);
   font-family: "Geist Sans", system-ui, sans-serif;
-  font-variant-numeric: tabular-nums;
+  /*font-variant-numeric: tabular-nums;*/
 }
 
 :root,

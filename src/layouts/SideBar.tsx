@@ -18,16 +18,14 @@ function HorizontalRule() {
 export default function SideBar() {
   return (
     <aside
-      className="sticky flex flex-col items-center h-screen w-64 p-4 gap-1 rounded-xl border 
-      border-[hsl(0,0%,8%)] bg-bg"
+      className="sticky flex flex-col items-center h-screen w-64 p-4 gap-1 border-r
+      border-[hsl(0,0%,15%)] bg-bg"
     >
       <div className="flex justify-between w-full mt-2 mb-8 pl-4 pr-2">
-        {/* TODO: router <Link to="/dashboard"></Link> */}
-        <img
-          src={logoDark}
-          alt="logo"
-          className="w-12 h-12 hover:cursor-pointer"
-        />
+        <Link to="/">
+          <img src={logoDark} alt="logo" className="w-12 h-12" />
+        </Link>
+
         <button
           className="flex items-center justify-center h-10 w-10 p-2 rounded-full  bg-bg-light 
           hover:cursor-pointer hover:brightness-110 transition-all duration-200"
@@ -36,16 +34,16 @@ export default function SideBar() {
         </button>
       </div>
 
-      <Link to="/">
-        <SideBarItem icon={LayoutDashboard} label="Dashboard" />
-      </Link>
+      <SideBarItem icon={LayoutDashboard} label="Dashboard" to="/" end />
       <HorizontalRule />
-      <Link to="/performance">
-        <SideBarItem icon={ChartLine} label="Performance" />
-      </Link>
-      <SideBarItem icon={ChartPie} label="Holdings" />
-      <SideBarItem icon={ArrowLeftRight} label="Transactions" />
-      <SideBarItem icon={HandCoins} label="Dividends" />
+      <SideBarItem icon={ChartLine} label="Performance" to="/performance" />
+      <SideBarItem icon={ChartPie} label="Holdings" to="/holdings" />
+      <SideBarItem
+        icon={ArrowLeftRight}
+        label="Transactions"
+        to="/transactions"
+      />
+      <SideBarItem icon={HandCoins} label="Dividends" to="/dividends" />
     </aside>
   );
 }
