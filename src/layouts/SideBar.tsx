@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import { Link } from "react-router-dom";
 
-import logoDark from "../assets/Union.svg";
+import logoDark from "../assets/logo-dark.svg";
 import SideBarItem from "../components/ui/SideBarItem";
 
 import { ChevronsLeft } from "lucide-react";
@@ -26,7 +26,7 @@ export default function SideBar() {
       className="sticky flex flex-col h-screen p-3 gap-1 border-r
       border-[hsl(0,0%,15%)] bg-bg"
     >
-      <div className="flex items-center justify-between w-full mt-2 mb-8 relative">
+      <div className="flex items-center justify-between w-full mt-5 mb-8 relative">
         <Link to="/">
           <img
             src={logoDark}
@@ -35,7 +35,7 @@ export default function SideBar() {
               ${
                 expanded
                   ? "delay-300 duration-500"
-                  : "pointer-events-none opacity-0 duration-400 -translate-x-4"
+                  : "pointer-events-none opacity-0 duration-300 -translate-x-4"
               }`}
           />
         </Link>
