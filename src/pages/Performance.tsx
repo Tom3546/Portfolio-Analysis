@@ -1,3 +1,3 @@
 export default function Performance() {
-  return <div className="bg-bg-dark">Performance</div>;
+  return <div className="">Performance</div>;
 }

@@ -1,8 +1,8 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logoDark from "../assets/logo-dark.svg";
-import SideBarItem from "../components/ui/SideBarItem";
+import SideBarItem from "../ui/SideBarItem";
+import SideBarContext from "../layout/SideBarContext";
 
 import { ChevronsLeft } from "lucide-react";
 
@@ -16,20 +16,18 @@ function HorizontalRule() {
   return <hr className="w-full mt-3 mb-3 border-[hsl(0,0%,15%)]" />;
 }
 
-export const SideBarContext = createContext(true);
-
 export default function SideBar() {
   const [expanded, setExpanded] = useState(true);
 
   return (
     <aside
-      className="sticky flex flex-col h-screen p-3 gap-1 border-r
+      className="sticky flex flex-col p-3 gap-1 border-r-2
       border-[hsl(0,0%,15%)] bg-bg"
     >
       <div className="flex items-center justify-between w-full mt-5 mb-8 relative">
         <Link to="/">
           <img
-            src={logoDark}
+            src="/logo-dark.svg"
             alt="logo"
             className={`absolute top-0 left-4 h-10 transition-all  
               ${

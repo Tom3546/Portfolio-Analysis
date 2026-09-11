@@ -1,3 +1,3 @@
 export default function Dividends() {
-  return <div className="bg-bg-dark">Dividends</div>;
+  return <div className="">Dividends</div>;
 }

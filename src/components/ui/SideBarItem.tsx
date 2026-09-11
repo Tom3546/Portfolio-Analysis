@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { type LucideIcon } from "lucide-react";
 import { useContext } from "react";
-import { SideBarContext } from "../../layouts/SideBar";
+import SideBarContext from "../layout/SideBarContext";
 
 export interface SideBarItemProps {
   icon: LucideIcon;
@@ -31,7 +31,7 @@ export default function SideBarItem({
       <Icon className="w-6" />
       <span
         className={`overflow-hidden transition-all duration-700 ease-in-out ${
-          expanded ? "w-56 ml-4" : "w-0 opacity-0"
+          expanded ? "w-46 ml-4" : "w-0 opacity-0"
         }`}
       >
         {label}

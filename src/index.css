@@ -34,7 +34,7 @@ body {
   --bg-dark: oklch(0.1 0 310);
   --bg: oklch(0.15 0 310);
   --bg-light: oklch(0.2 0 310);
-  --text: oklch(0.9 0.012 106.776); 
+  --text: oklch(0.9 0.012 106.776);
   --text-muted: oklch(0.7 0 310);
   --highlight: oklch(0.35 0 310);
   --border: oklch(0.26 0 310);

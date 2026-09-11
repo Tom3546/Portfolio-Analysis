@@ -1,3 +1,3 @@
 export default function Transactions() {
-  return <div className="bg-bg-dark">Transactions</div>;
+  return <div className="">Transactions</div>;
 }
