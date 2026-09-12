@@ -23,6 +23,8 @@
   --color-info: var(--info);
 }
 
+@custom-variant dark ([data-theme="dark"] &);
+
 body {
   background: var(--bg-dark);
   font-family: "Geist Sans", system-ui, sans-serif;
@@ -49,19 +51,19 @@ body {
 }
 
 [data-theme="light"] {
-  --bg-dark: oklch(0.92 0 310);
-  --bg: oklch(0.96 0 310);
+  --bg-dark: oklch(0.93 0.005 310);
+  --bg: oklch(0.97 0.003 310);
   --bg-light: oklch(1 0 310);
-  --text: oklch(0.15 0 310);
-  --text-muted: oklch(0.4 0 310);
-  --highlight: oklch(1 0 310);
-  --border: oklch(0.88 0 310);
-  --border-muted: oklch(0.93 0 310);
-  --primary: oklch(0.4 0.1 310);
-  --primary-hover: oklch(0.8 0.1 340);
-  --secondary: oklch(0.4 0.1 130);
-  --danger: oklch(0.5 0.05 30);
-  --warning: oklch(0.5 0.05 100);
-  --success: oklch(0.5 0.05 160);
-  --info: oklch(0.5 0.05 260);
+  --text: oklch(0.2 0.015 310);
+  --text-muted: oklch(0.5 0.01 310);
+  --highlight: oklch(0.94 0.03 340);
+  --border: oklch(0.88 0.01 310);
+  --border-muted: oklch(0.93 0.005 310);
+  --primary: oklch(0.55 0.18 340);
+  --primary-hover: oklch(0.48 0.18 340);
+  --secondary: oklch(0.5 0.12 350);
+  --danger: oklch(0.58 0.18 30);
+  --warning: oklch(0.65 0.16 100);
+  --success: oklch(0.55 0.15 160);
+  --info: oklch(0.55 0.15 260);
 }
