@@ -4,11 +4,23 @@ import LightDarkMode from "../../assets/LightDarkMode.json";
 
 type Theme = "dark" | "light";
 
+function getTheme() {
+  const savedTheme = localStorage.getItem("theme") as Theme;
+  if (savedTheme) {
+    return savedTheme;
+  }
+
+  const systemPrefersDark = window.matchMedia(
+    "(prefers-color-scheme: dark)",
+  ).matches;
+  return systemPrefersDark ? "dark" : "light";
+}
+
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(() => {
-    const selectedTheme = (localStorage.getItem("theme") || "dark") as Theme;
-    document.documentElement.setAttribute("data-theme", selectedTheme);
-    return selectedTheme;
+    const initialTheme = getTheme();
+    document.documentElement.setAttribute("data-theme", initialTheme);
+    return initialTheme;
   });
 
   function toggleTheme() {

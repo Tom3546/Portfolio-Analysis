@@ -17,7 +17,9 @@ function HorizontalRule() {
 }
 
 export default function SideBar() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState<boolean>(() => {
+    return localStorage.getItem("sidebar-state") !== "false";
+  });
 
   const logoClasses = `absolute top-0 left-4 h-10 transition-all ${
     expanded
@@ -50,7 +52,13 @@ export default function SideBar() {
           </picture>
         </Link>
         <button
-          onClick={() => setExpanded((curr) => !curr)}
+          onClick={() =>
+            setExpanded((curr) => {
+              const next = !curr;
+              localStorage.setItem("sidebar-state", String(next));
+              return next;
+            })
+          }
           className="flex items-center justify-center h-10 w-10 mr-1 rounded-full  bg-bg-light 
           hover:cursor-pointer hover:brightness-110 transition-all duration-200"
         >
