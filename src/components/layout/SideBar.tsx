@@ -30,7 +30,7 @@ export default function SideBar() {
   return (
     <aside
       className="sticky flex flex-col p-3 gap-1 border-r-2
-      border-border bg-bg"
+      border-border bg-bg duration-200"
     >
       <div className="flex items-center justify-between w-full mt-5 mb-8 relative">
         <Link to="/">

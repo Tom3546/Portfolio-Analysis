@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Lottie } from "lottie-react";
-import LightDarkMode from "../../assets/LightDarkMode.json";
+import { Sun } from "lucide-react";
+import { Moon } from "lucide-react";
 
 type Theme = "dark" | "light";
 
@@ -34,14 +34,16 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="flex items-center justify-center h-10 w-10 rounded-md 
-        border-2 border-border cursor-pointer"
+        border-2 border-border cursor-pointer hover:bg-bg-light group"
     >
-      <Lottie
-        src={LightDarkMode}
-        loop={false}
-        autoplay={false}
-        className="w-5 h-5"
-      />
+      {theme === "dark" ? <Sun /> : <Moon />}
+      <span
+        className="absolute rounded-md px-2 py-1 mt-20 bg-bg-light 
+          text-text-muted text-sm invisible opacity-20 group-hover:visible 
+          group-hover:opacity-100 group-hover:translate-y-3 duration-100"
+      >
+        {theme === "dark" ? "Toggle light" : "Toggle dark"}
+      </span>
     </button>
   );
 }
