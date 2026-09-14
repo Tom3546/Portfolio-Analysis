@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import SideBarItem from "../ui/SideBarItem";
-import SideBarContext from "../layout/SideBarContext";
+import SideBarItem from "./SideBarItem";
+import SideBarContext from "./SideBarContext";
 
 import { ChevronsLeft } from "lucide-react";
 
@@ -73,14 +73,14 @@ export default function SideBar() {
       <SideBarContext value={expanded}>
         <SideBarItem icon={LayoutDashboard} label="Dashboard" to="/" end />
         <HorizontalRule />
-        <SideBarItem icon={ChartLine} label="Performance" to="/performance" />
-        <SideBarItem icon={ChartPie} label="Holdings" to="/holdings" />
+        <SideBarItem icon={ChartLine} label="Statystyki" to="/performance" />
+        <SideBarItem icon={ChartPie} label="Aktywa" to="/holdings" />
         <SideBarItem
           icon={ArrowLeftRight}
-          label="Transactions"
+          label="Transakcje"
           to="/transactions"
         />
-        <SideBarItem icon={HandCoins} label="Dividends" to="/dividends" />
+        <SideBarItem icon={HandCoins} label="Dywidendy" to="/dividends" />
       </SideBarContext>
     </aside>
   );

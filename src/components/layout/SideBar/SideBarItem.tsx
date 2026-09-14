@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { type LucideIcon } from "lucide-react";
 import { useContext } from "react";
-import SideBarContext from "../layout/SideBarContext";
+import SideBarContext from "./SideBarContext";
 
-export interface SideBarItemProps {
+interface SideBarItemProps {
   icon: LucideIcon;
   label: string;
   to: string;
