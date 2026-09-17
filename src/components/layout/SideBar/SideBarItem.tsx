@@ -31,7 +31,7 @@ export default function SideBarItem({
       <Icon className="w-6" />
       <span
         className={`overflow-hidden duration-700 ease-in-out ${
-          expanded ? "w-46 ml-4" : "w-0 opacity-0"
+          expanded ? "w-40 ml-4" : "w-0 opacity-0"
         }`}
       >
         {label}

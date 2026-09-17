@@ -1,6 +1,7 @@
 export type AssetsCategory =
   | "stock"
   | "etf"
+  | "reit"
   | "crypto"
   | "cash"
   | "bond"
@@ -16,6 +17,7 @@ export interface Asset {
   avgPurchasePrice: number;
   currentPrice: number;
   allocationPercent: number;
+  YieldOnCost?: number;
 }
 
 export interface PortfolioSummary {

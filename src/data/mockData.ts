@@ -10,7 +10,7 @@ export const mockSummary: PortfolioSummary = {
   rateOfReturn: 20.23,
   annualizedReturn: 9.45,
   dailyProfitLoss: -620.4,
-  dailyChangePercentage: -0.33,
+  dailyChangePercentage: 0.33,
 };
 
 export const mockAssets: Asset[] = [

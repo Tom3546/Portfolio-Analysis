@@ -34,16 +34,9 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="flex items-center justify-center h-10 w-10 rounded-md 
-        border-2 border-border cursor-pointer hover:bg-bg-light group"
+        border border-border cursor-pointer hover:bg-bg-light shrink-0"
     >
       {theme === "dark" ? <Sun /> : <Moon />}
-      <span
-        className="absolute rounded-md px-2 py-1 mt-20 bg-bg-light 
-          text-text-muted text-sm invisible opacity-20 group-hover:visible 
-          group-hover:opacity-100 group-hover:translate-y-3 duration-100"
-      >
-        {theme === "dark" ? "Toggle light" : "Toggle dark"}
-      </span>
     </button>
   );
 }

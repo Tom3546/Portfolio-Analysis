@@ -6,11 +6,13 @@ import SideBarContext from "./SideBarContext";
 
 import { ChevronsLeft } from "lucide-react";
 
-import { LayoutDashboard } from "lucide-react";
-import { ChartLine } from "lucide-react";
-import { ChartPie } from "lucide-react";
-import { HandCoins } from "lucide-react";
-import { ArrowLeftRight } from "lucide-react";
+import {
+  LayoutDashboard,
+  ChartLine,
+  ChartPie,
+  HandCoins,
+  ArrowLeftRight,
+} from "lucide-react";
 
 function HorizontalRule() {
   return <hr className="w-full mt-3 mb-3 border-border" />;
@@ -29,7 +31,7 @@ export default function SideBar() {
 
   return (
     <aside
-      className="sticky flex flex-col p-3 gap-1 border-r-2
+      className="sticky flex flex-col p-2 gap-1 
       border-border bg-bg duration-200"
     >
       <div className="flex items-center justify-between w-full mt-5 mb-8 relative">
