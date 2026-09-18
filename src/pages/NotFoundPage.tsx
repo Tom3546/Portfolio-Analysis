@@ -12,11 +12,11 @@ export default function NotFoundPage() {
         className="h-92 sm:h-72 w-auto max-w-full"
       />
       <div className="flex flex-col text-center gap-2">
-        <h1 className="text-3xl font-bold">Page not found</h1>
-        <span className="   text-text-muted">
-          We couldn't find what you were looking for
+        <h1 className="text-3xl font-bold">Nie znaleziono strony</h1>
+        <span className="text-text-muted">
+          Nie udało się odnaleźć szukanej strony.
           <br />
-          Double-check the URL or head back to the dashboard
+          Sprawdź poprawność adresu URL lub wróć do dashboardu.
         </span>
       </div>
       <Link
@@ -24,7 +24,7 @@ export default function NotFoundPage() {
         className="text-center w-36 p-4 bg-primary text-bg rounded-xl 
         hover:brightness-115 transition-all duration-200"
       >
-        Back
+        Powrót
       </Link>
     </main>
   );

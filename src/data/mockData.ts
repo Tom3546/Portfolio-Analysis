@@ -6,11 +6,19 @@ import {
 
 export const mockSummary: PortfolioSummary = {
   totalValue: 185420.5,
+  openPositions: 156239.06,
+
   totalProfitLoss: 31200.8,
+  totalReturn: 45.78,
+  dailyProfitLoss: 620.4,
+  dailyChangePercentage: 0.22,
+
   rateOfReturn: 20.23,
-  annualizedReturn: 9.45,
-  dailyProfitLoss: -620.4,
-  dailyChangePercentage: 0.33,
+  xirr: 9.45,
+
+  passiveIncomeYield: 4.82,
+  passiveIncomeYoYChange: 1.25,
+  monthlyPassiveIncome: 540.0,
 };
 
 export const mockAssets: Asset[] = [

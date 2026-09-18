@@ -22,11 +22,16 @@ export interface Asset {
 
 export interface PortfolioSummary {
   totalValue: number;
+  openPositions: number;
   totalProfitLoss: number;
-  rateOfReturn: number;
-  annualizedReturn: number;
+  totalReturn: number;
   dailyProfitLoss: number;
   dailyChangePercentage: number;
+  rateOfReturn: number;
+  xirr: number;
+  annualPassiveIncome: number;
+  passiveIncomeYoYChange: number;
+  monthlyPassiveIncome: number;
 }
 
 export interface ChartPoint {

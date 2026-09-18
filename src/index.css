@@ -24,7 +24,6 @@
 
   --color-positive: oklch(0.7 0.17 162.5);
   --color-negative: oklch(0.63 0.22 18.1);
-  --color-neutral: oklch(0.7 0.04 252.4);
 }
 
 @custom-variant dark ([data-theme="dark"] &);
