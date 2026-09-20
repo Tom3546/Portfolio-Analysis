@@ -29,7 +29,7 @@ export interface PortfolioSummary {
   dailyChangePercentage: number;
   rateOfReturn: number;
   xirr: number;
-  annualPassiveIncome: number;
+  passiveIncomeYield: number;
   passiveIncomeYoYChange: number;
   monthlyPassiveIncome: number;
 }

@@ -25,14 +25,13 @@ console.log(formattedMockSummary);
 
 export default function DashBoard() {
   return (
-    <div className="max-w-7xl gap-4 p-6 max-md:p-4 mx-auto">
-      {/*or: max-w-screen-2xl*/}
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+    <div className="max-w-screen-2xl gap-4 p-6 max-md:p-4 mx-auto">
+      <div className="grid md:grid-cols-2 xl:grid-cols-[repeat(4,minmax(max-content,1fr))] gap-4">
         <Card
           title="Wartość portfela"
           icon={WalletMinimal}
           value={`${formattedMockSummary.totalValue} PLN`}
-          subValue={`Otwarte pozycje: ${formattedMockSummary.openPositions} PLN`}
+          subValue={`Pozycje: ${formattedMockSummary.openPositions} PLN`}
         />
         <Card
           title="Zysk całkowity"

@@ -8,7 +8,7 @@ export const mockSummary: PortfolioSummary = {
   totalValue: 185420.5,
   openPositions: 156239.06,
 
-  totalProfitLoss: 31200.8,
+  totalProfitLoss: 32893.05,
   totalReturn: 45.78,
   dailyProfitLoss: 620.4,
   dailyChangePercentage: 0.22,

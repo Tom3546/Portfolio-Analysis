@@ -38,18 +38,18 @@ export default function Card({
 
   return (
     <div
-      className="h-40 p-7 bg-bg ring-1 ring-border rounded-md 
-      transition-colors duration-200"
+      className="flex flex-col justify-between items-between h-36 px-6 py-7 ring-1 ring-border
+      bg-linear-to-b from-bg to-bg-dark transition-colors duration-200"
     >
-      <div className="flex items-center justify-between gap-3 w-full text-xl">
+      <div className="flex justify-between w-full">
         <span>{title}</span>
         <Icon />
       </div>
-      <div className="">
-        <span>{value} </span>
+      <div className="flex items-center flex-wrap gap-2">
+        <span className="text-2xl text-">{value}</span>
         {sideValue && (
           <div
-            className={`flex ${sideTrend ? "text-positive" : "text-negative"}`}
+            className={`flex items-center ${sideTrend ? "text-positive" : "text-negative"}`}
           >
             <span className="w-5 pb-1 flex items-center">
               {sideTrend ? (
@@ -58,19 +58,17 @@ export default function Card({
                 <ChevronDown strokeWidth="2.3" />
               )}
             </span>
-            <span>{sideValue}</span>
+            <span className="text-sm">{sideValue}</span>
           </div>
         )}
       </div>
 
-      {TrendIcon ? (
-        <div className={`flex gap-2 ${color}`}>
-          <TrendIcon strokeWidth="1.5" />
-          <span>{subValue}</span>
-        </div>
-      ) : (
-        <span>{subValue}</span>
-      )}
+      <div
+        className={`flex items-center gap-2 ${TrendIcon ? color : "text-text-muted"}`}
+      >
+        {TrendIcon && <TrendIcon strokeWidth="1.5" />}
+        <span className="text-sm">{subValue}</span>
+      </div>
     </div>
   );
 }
