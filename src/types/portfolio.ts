@@ -35,6 +35,6 @@ export interface PortfolioSummary {
 }
 
 export interface ChartPoint {
-  date: string; // or Date depending on python api
+  time: string;
   value: number;
 }

@@ -22,8 +22,8 @@
   --color-success: var(--success);
   --color-info: var(--info);
 
-  --color-positive: oklch(0.7 0.17 162.5);
-  --color-negative: oklch(0.63 0.22 18.1);
+  --color-positive: oklch(0.7 0.12 162.5);
+  --color-negative: oklch(0.63 0.14 18.1);
 }
 
 @custom-variant dark ([data-theme="dark"] &);

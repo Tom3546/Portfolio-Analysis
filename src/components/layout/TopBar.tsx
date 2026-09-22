@@ -5,8 +5,8 @@ import { Search } from "lucide-react";
 export default function TopBar() {
   return (
     <div
-      className="flex items-center justify-between w-full h-18 p-4 
-      gap-2 border-border border-b"
+      className="sticky top-0 flex justify-between w-full p-4 
+      gap-2 border-border border-b bg-bg-dark"
     >
       <label
         className="flex items-center w-full max-w-md gap-2 p-2 rounded-md 

@@ -39,7 +39,7 @@ export default function Card({
   return (
     <div
       className="flex flex-col justify-between items-between h-36 px-6 py-7 ring-1 ring-border
-      bg-linear-to-b from-bg to-bg-dark transition-colors duration-200"
+      bg-bg transition-colors duration-200"
     >
       <div className="flex justify-between w-full">
         <span>{title}</span>

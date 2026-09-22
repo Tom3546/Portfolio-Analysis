@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 function RootLayout() {
   return (
     <main
-      className="flex h-screen w-screen bg-bg-dark text-text overflow-hidden 
-      transition-color duration-200"
+      className="flex min-h-screen w-full bg-bg-dark text-text 
+      transition-colors duration-200"
     >
       <SideBar />
-      <div className="flex-1">
+      <div className="flex-1 min-w-0">
         <TopBar />
         <Outlet />
       </div>
